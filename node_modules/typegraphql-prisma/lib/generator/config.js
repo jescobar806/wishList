@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.crudResolversFolderName = exports.relationsResolversFolderName = exports.argsFolderName = exports.resolversFolderName = exports.outputsFolderName = exports.inputsFolderName = exports.enumsFolderName = exports.modelsFolderName = exports.supportedMutationActions = exports.supportedQueryActions = exports.baseKeys = void 0;
+exports.InputOmitSetting = exports.crudResolversFolderName = exports.relationsResolversFolderName = exports.argsFolderName = exports.resolversFolderName = exports.outputsFolderName = exports.inputsFolderName = exports.enumsFolderName = exports.modelsFolderName = exports.supportedMutationActions = exports.supportedQueryActions = exports.baseKeys = void 0;
 exports.baseKeys = ["model", "plural"];
 exports.supportedQueryActions = [
     "findUnique",
@@ -26,4 +26,11 @@ exports.resolversFolderName = "resolvers";
 exports.argsFolderName = "args";
 exports.relationsResolversFolderName = "relations";
 exports.crudResolversFolderName = "crud";
+var InputOmitSetting;
+(function (InputOmitSetting) {
+    InputOmitSetting["Create"] = "create";
+    InputOmitSetting["Update"] = "update";
+    InputOmitSetting["Where"] = "where";
+    InputOmitSetting["OrderBy"] = "orderBy";
+})(InputOmitSetting = exports.InputOmitSetting || (exports.InputOmitSetting = {}));
 //# sourceMappingURL=config.js.map
